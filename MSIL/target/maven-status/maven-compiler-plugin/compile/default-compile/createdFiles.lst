@@ -1,0 +1,11 @@
+pages\BasePage.class
+utilities\WebDriverManager.class
+pages\LoginPage.class
+pages\Survey.class
+runners\Runner.class
+pages\Declaration.class
+pages\Message.class
+steps\CreateMessage.class
+steps\Login.class
+pages\Catalog.class
+pages\Ticket.class
