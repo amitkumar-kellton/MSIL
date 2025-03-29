@@ -7,7 +7,8 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/test/resources/features/",
         glue = "steps",
         plugin = {"pretty", "html:target/cucumber-reports"},
-        publish = true
+        publish = true,
+        dryRun = false
 )
 public class Runner extends AbstractTestNGCucumberTests {
 }

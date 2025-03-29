@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>MSIL</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 29 15:23:24 IST 2025</td>
+<td>Started on:</td><td>Sat Mar 29 16:13:49 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>152 seconds (152734 ms)</td>
+<tr><td>Total time:</td><td>281 seconds (281735 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,83 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 77777@nishantsclub.onmicrosoft.com and create a message.", "Optional[Login & Create Message Feature]"</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a77f53936cc5ec9a4f8e3464d1a541b, isElementDisplayed {id=f.23539C9DC154B954A32E6AE52EC8ACF4.d.C84E80A346DAEB6AFE54A8A21A90F160.e.3450}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AMIT~1.KUM\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54767}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54767/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3a77f53936cc5ec9a4f8e3464d1a541b)] -&gt; id: i0118]
+Session ID: 3a77f53936cc5ec9a4f8e3464d1a541b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.BasePage.sendKeys(BasePage.java:26)
+	at pages.LoginPage.enterPassword(LoginPage.java:42)
+	at steps.Login.i_am_on_the_login_page(Login.java:26)
+	at ✽.I enter username &quot;77777@nishantsclub.onmicrosoft.com&quot; and password &quot;@Redhat@735&quot;(file:///C:/Users/amit.kumar/git/MSIL/MSIL/src/test/resources/features/createMessage.feature:69)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace833566421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace833566421'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a77f53936cc5ec9a4f8e3464d1a541b, isElementDisplayed {id=f.23539C9DC154B954A32E6AE52EC8ACF4.d.C84E80A346DAEB6AFE54A8A21A90F160.e.3450}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\AMIT~1.KUM\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54767}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54767/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3a77f53936cc5ec9a4f8e3464d1a541b)] -&gt; id: i0118]
+Session ID: 3a77f53936cc5ec9a4f8e3464d1a541b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.BasePage.sendKeys(BasePage.java:26)
+	at pages.LoginPage.enterPassword(LoginPage.java:42)
+	at steps.Login.i_am_on_the_login_page(Login.java:26)
+	at ✽.I enter username &quot;77777@nishantsclub.onmicrosoft.com&quot; and password &quot;@Redhat@735&quot;(file:///C:/Users/amit.kumar/git/MSIL/MSIL/src/test/resources/features/createMessage.feature:69)
+</pre></div></td>
+<td>8</td>
+<td>runners.Runner@1b7cc17c</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,65 +152,60 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 77777@nishantsclub.onmicrosoft.com and create a message.", "Optional[Login & Create Message Feature]"</td>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 11111@nishantsclub.onmicrosoft.com and create a message.", "Optional[Login & Create Message Feature]"</td>
 <td></td>
-<td>13</td>
-<td>runners.Runner@19bb07ed</td></tr>
-<tr>
-<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 90217@nishantsclub.onmicrosoft.com and create a message.", "Optional[Login & Create Message Feature]"</td>
-<td></td>
-<td>13</td>
-<td>runners.Runner@19bb07ed</td></tr>
-<tr>
-<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 11111@nishantsclub.onmicrosoft.com.", "Optional[Login functionality]"</td>
-<td></td>
-<td>12</td>
-<td>runners.Runner@19bb07ed</td></tr>
+<td>19</td>
+<td>runners.Runner@1b7cc17c</td></tr>
 <tr>
 <td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 78932@nishantsclub.onmicrosoft.com.", "Optional[Login functionality]"</td>
 <td></td>
-<td>11</td>
-<td>runners.Runner@19bb07ed</td></tr>
-<tr>
-<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the Admin credentials and create a message.", "Optional[Login & Create Message Feature]"</td>
-<td></td>
-<td>13</td>
-<td>runners.Runner@19bb07ed</td></tr>
-<tr>
-<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 77777@nishantsclub.onmicrosoft.com.", "Optional[Login functionality]"</td>
-<td></td>
-<td>10</td>
-<td>runners.Runner@19bb07ed</td></tr>
-<tr>
-<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 11111@nishantsclub.onmicrosoft.com and create a message.", "Optional[Login & Create Message Feature]"</td>
-<td></td>
-<td>13</td>
-<td>runners.Runner@19bb07ed</td></tr>
-<tr>
-<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 55555@nishantsclub.onmicrosoft.com and create a message.", "Optional[Login & Create Message Feature]"</td>
-<td></td>
-<td>13</td>
-<td>runners.Runner@19bb07ed</td></tr>
-<tr>
-<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 90217@nishantsclub.onmicrosoft.com.", "Optional[Login functionality]"</td>
-<td></td>
-<td>11</td>
-<td>runners.Runner@19bb07ed</td></tr>
-<tr>
-<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 55555@nishantsclub.onmicrosoft.com.", "Optional[Login functionality]"</td>
-<td></td>
-<td>11</td>
-<td>runners.Runner@19bb07ed</td></tr>
+<td>21</td>
+<td>runners.Runner@1b7cc17c</td></tr>
 <tr>
 <td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 78932@nishantsclub.onmicrosoft.com and create a message.", "Optional[Login & Create Message Feature]"</td>
 <td></td>
-<td>13</td>
-<td>runners.Runner@19bb07ed</td></tr>
+<td>30</td>
+<td>runners.Runner@1b7cc17c</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 55555@nishantsclub.onmicrosoft.com and create a message.", "Optional[Login & Create Message Feature]"</td>
+<td></td>
+<td>24</td>
+<td>runners.Runner@1b7cc17c</td></tr>
 <tr>
 <td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the Admin credentials.", "Optional[Login functionality]"</td>
 <td></td>
-<td>12</td>
-<td>runners.Runner@19bb07ed</td></tr>
+<td>27</td>
+<td>runners.Runner@1b7cc17c</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the Admin credentials and create a message.", "Optional[Login & Create Message Feature]"</td>
+<td></td>
+<td>27</td>
+<td>runners.Runner@1b7cc17c</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 90217@nishantsclub.onmicrosoft.com.", "Optional[Login functionality]"</td>
+<td></td>
+<td>21</td>
+<td>runners.Runner@1b7cc17c</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 11111@nishantsclub.onmicrosoft.com.", "Optional[Login functionality]"</td>
+<td></td>
+<td>21</td>
+<td>runners.Runner@1b7cc17c</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 90217@nishantsclub.onmicrosoft.com and create a message.", "Optional[Login & Create Message Feature]"</td>
+<td></td>
+<td>26</td>
+<td>runners.Runner@1b7cc17c</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 55555@nishantsclub.onmicrosoft.com.", "Optional[Login functionality]"</td>
+<td></td>
+<td>24</td>
+<td>runners.Runner@1b7cc17c</td></tr>
+<tr>
+<td title='runners.Runner.runScenario()'><b>runScenario</b><br>Test class: runners.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Log in to the MSIL App using the user 77777@nishantsclub.onmicrosoft.com.", "Optional[Login functionality]"</td>
+<td></td>
+<td>23</td>
+<td>runners.Runner@1b7cc17c</td></tr>
 </table><p>
 </body>
 </html>
