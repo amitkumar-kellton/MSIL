@@ -18,7 +18,7 @@ The test suite verifies the login functionality for different user roles, includ
 After logging in, users can create messages in the MSIL App.
 
 #### **Test Steps:**
-1. Perform login as described above.
+1. Log in as described above.
 2. Navigate to the **Message Page**.
 3. Fill in the message form with a **title, message body, and status**.
 4. Wait for 2 seconds and close the browser.
