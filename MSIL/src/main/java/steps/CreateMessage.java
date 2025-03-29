@@ -10,7 +10,7 @@ public class CreateMessage {
 
 	WebDriverManager webDriverManager;
 	private Message message;
-	String filePath = "C:\\Users\\amit.kumar\\eclipse-workspace\\MSIL\\src\\test\\resources\\logo.jpg";
+	String filePath = "/Users/amitkumar/git/MSIL/MSIL/src/test/resources/logo.jpg";
 
 	public CreateMessage() {
 		message = new Message(WebDriverManager.getDriver());
