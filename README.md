@@ -36,8 +36,8 @@ After logging in, users can create messages in the MSIL App.
 ### **Setup Instructions**
 1. **Clone the repository:**
    ```sh
-git clone https://github.com/amitkumar-kellton/MSIL.git
-cd your-repository
+   git clone https://github.com/amitkumar-kellton/MSIL.git
+   cd your-repository
    ```
 2. **Install dependencies:**
    ```sh
@@ -47,4 +47,3 @@ cd your-repository
    ```sh
    mvn test
    ```
-
