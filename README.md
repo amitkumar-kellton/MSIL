@@ -1,51 +1,51 @@
-# MSIL App Automation Testing
+# MSIL Test Automation Framework
 
-This repository contains automated test scripts for the **MSIL App** using **Cucumber, Selenium, and Java**. It covers login functionality for different users and message creation after successful authentication.
+## 🚀 Overview
+This is a Selenium-based test automation framework using Java and Cucumber for UI testing. It follows the Page Object Model (POM) for maintainability and scalability.
 
-## Features
+## 📂 Project Structure
+```
+MSIL/
+│── src/
+│   ├── main/java/utilities/       # Helper classes (WebDriverManager, reporting, etc.)
+│   ├── main/java/pages/           # Page Object Model classes
+│   ├── main/java/steps/           # Step Definitions for Cucumber
+│   ├── main/java/runners/         # Test runners for executing scenarios
+│   ├── test/resources/features/   # Cucumber feature files
+│── test-output/                   # Test reports and logs
+│── pom.xml                         # Maven dependencies and configurations
+│── README.md                       # Project documentation
+```
 
-### 1. Login Functionality
-The test suite verifies the login functionality for different user roles, including the **Admin** and multiple standard users.
+## 🛠️ Setup & Installation
+### Prerequisites
+- Java 11 or later
+- Maven installed
+- Chrome/Firefox/Edge browsers installed
 
-#### **Test Steps:**
-1. Open the browser and navigate to the MSIL App URL.
-2. Click the **Login** button.
-3. Enter the provided **username** and **password**.
-4. Verify successful login.
-5. Wait for 2 seconds and close the browser.
-
-### 2. Message Creation Feature
-After logging in, users can create messages in the MSIL App.
-
-#### **Test Steps:**
-1. Log in as described above.
-2. Navigate to the **Message Page**.
-3. Fill in the message form with a **title, message body, and status**.
-4. Wait for 2 seconds and close the browser.
-
-## Getting Started
-
-### **Prerequisites**
-- **Java JDK 8+**
-- **Maven**
-- **Eclipse/IntelliJ IDEA**
-- **Selenium WebDriver**
-- **Cucumber-JVM**
-- **Git**
-
-### **Setup Instructions**
-1. **Clone the repository:**
+### Installation Steps
+1. Clone the repository:
    ```sh
-   cd your-repository
+   git clone https://github.com/yourusername/MSIL.git
+   cd MSIL
    ```
-   ```sh
-   git clone https://github.com/amitkumar-kellton/MSIL.git
-   ```
-3. **Install dependencies:**
+2. Install dependencies:
    ```sh
    mvn clean install
    ```
-4. **Run tests:**
-   ```sh
-   mvn test
-   ```
+
+## 🚦 Running Tests
+Run tests with different browsers:
+```sh
+mvn test -Dbrowser=chrome   # Run tests on Chrome
+mvn test -Dbrowser=firefox  # Run tests on Firefox
+mvn test -Dbrowser=edge     # Run tests on Edge
+```
+
+## 📊 Test Reports
+- Reports are generated in `test-output/`
+- Open `test-output/index.html` for detailed results
+
+
+Happy Testing! 🎯
+
