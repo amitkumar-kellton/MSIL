@@ -31,7 +31,7 @@ Feature: Login & Create Message Feature
 
     Examples: 
       | username                           | password    | user_type | messageTitle          | status    |
-      | 23145@nishantsclub.onmicrosoft.com | @Redhat@735 | admin     | Title 29-March, 23145 | Published |
+      | 23145@nishantsclub.onmicrosoft.com | @Redhat@735 | admin     | Title 02-April, 23145 | Published |
 
   Scenario Outline: Log in to the MSIL App using the user 90217@nishantsclub.onmicrosoft.com and create a message.
     Given Open the Browser and navigate to the URL
@@ -46,7 +46,7 @@ Feature: Login & Create Message Feature
 
     Examples: 
       | username                           | password    | user_type | messageTitle          | status    |
-      | 90217@nishantsclub.onmicrosoft.com | @Redhat@735 | User 1    | Title 29-March, 90217 | Published |
+      | 90217@nishantsclub.onmicrosoft.com | @Redhat@735 | User 1    | Title 02-April, 90217 | Published |
 
   Scenario Outline: Log in to the MSIL App using the user 78932@nishantsclub.onmicrosoft.com and create a message.
     Given Open the Browser and navigate to the URL
@@ -61,7 +61,7 @@ Feature: Login & Create Message Feature
 
     Examples: 
       | username                           | password    | user_type | messageTitle          | status    |
-      | 78932@nishantsclub.onmicrosoft.com | @Redhat@735 | User 2    | Title 29-March, 78932 | Published |
+      | 78932@nishantsclub.onmicrosoft.com | @Redhat@735 | User 2    | Title 02-April, 78932 | Published |
 
   Scenario Outline: Log in to the MSIL App using the user 77777@nishantsclub.onmicrosoft.com and create a message.
     Given Open the Browser and navigate to the URL
@@ -76,7 +76,7 @@ Feature: Login & Create Message Feature
 
     Examples: 
       | username                           | password    | user_type | messageTitle          | status    |
-      | 77777@nishantsclub.onmicrosoft.com | @Redhat@735 | User 3    | Title 29-March, 77777 | Published |
+      | 77777@nishantsclub.onmicrosoft.com | @Redhat@735 | User 3    | Title 02-April, 77777 | Published |
 
   Scenario Outline: Log in to the MSIL App using the user 11111@nishantsclub.onmicrosoft.com and create a message.
     Given Open the Browser and navigate to the URL
@@ -91,7 +91,7 @@ Feature: Login & Create Message Feature
 
     Examples: 
       | username                           | password    | user_type | messageTitle          | status    |
-      | 11111@nishantsclub.onmicrosoft.com | @Redhat@735 | User 4    | Title 29-March, 11111 | Published |
+      | 11111@nishantsclub.onmicrosoft.com | @Redhat@735 | User 4    | Title 02-April, 11111 | Published |
 
   Scenario Outline: Log in to the MSIL App using the user 55555@nishantsclub.onmicrosoft.com and create a message.
     Given Open the Browser and navigate to the URL
@@ -106,4 +106,4 @@ Feature: Login & Create Message Feature
 
     Examples: 
       | username                           | password    | user_type | messageTitle          | status    |
-      | 55555@nishantsclub.onmicrosoft.com | @Redhat@735 | User 5    | Title 29-March, 55555 | Published |
+      | 55555@nishantsclub.onmicrosoft.com | @Redhat@735 | User 5    | Title 02-April, 55555 | Published |
